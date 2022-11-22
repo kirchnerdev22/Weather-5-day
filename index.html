@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Weather thing!</h1> 
+    </header>
+    <aside>
+        <label for="site-search">Search the site:</label>
+        <input type="text" id="citySearch" name="q" placeholder="city name">
+        <button id="searchButton">Search</button>
+
+        <div id="citySearchHistory">
+            <div>
+                <h4>Search history</h4>
+                <div id="citySearches">
+                    
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main>
+
+        <div id="today">
+            <h2>Todays forecast</h2>
+            <h3 id="cityName1"></h3>
+        
+                <p id="icon"></p>
+                <p id="temp1"></p>
+                <p id="humidity1"></p>
+                <p id="windspeed1"></p>
+            
+        </div>
+
+        <article id="forecasts">
+            
+        </article>
+    
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+/* Header styling */
+header{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: rgb(195, 190, 190);
+    background-color: rgb(53, 53, 54);
+    font-size: 25px;
+    border-bottom: 5px solid rgb(136, 133, 133);
+}
+header h1{
+    position: relative;
+    top: 10px;
+}
+body{
+    background-color: rgb(34, 34, 35);
+}
+/* Styling for all weather icons */
+img{
+    height: 40px;
+}
+/* Changes your cursor when you hover over a button */
+button:hover{
+    cursor: pointer;
+}
+/* City info article styling */
+#cityInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 25%;
+    border-right: 2px solid rgb(136, 133, 133);
+}
+
+/* Input box styling */
+#citySearch{
+    box-sizing: content-box;
+    margin: 10px auto;
+    width: 10%;
+    height: 30px;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid rgb(150, 148, 148);
+}
+#citySearches{ 
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    margin-top: 10px;
+    color: darkgrey;
+}
+
+/* Main styling for top buttons */
+#searchButton{
+    margin: 10px auto 20px auto;
+    width: 10%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: rgb(10, 112, 202);
+}
+/* Styling for search history article */
+#citySearchHistory{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    margin-top: 10px;
+    color: darkgrey;
+
+}
+/* Styling for search history results */
+#citySearches{
+    width: 100%;
+    align-content: center;
+}
+/* Styling for search history buttons */
+
+/* Styling for current day's weather */
+#today{
+    margin: 30px 50px;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 140px;
+    width: 80%;
+    border: 2px solid rgb(150, 148, 148);
+    border-radius: 8px;
+    color: rgb(150, 148, 148);
+}
+/* Styling for city(current day) */
+#today h3{
+    margin: 20px;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(10, 112, 202);
+}
+/* Styling for current day's weather status' */
+#today p{
+    margin: 20px;
+    font-size: 25px;
+    font-family: "Roboto ", sans-serif;
+    color: rgb(195, 190, 190);
+
+}
+/* Styling for five day forecast */
+#forecasts{
+    margin: 0 20px 10px 50px;
+    position: absolute;
+    top: 450px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    
+}
+/* Styling for forecast cards */
+#forecasts{
+    width: 1025px;
+    height: 275px;
+    background-color: rgb(53, 53, 54);
+    font-size: 25px;
+    border-radius: 8px;
+}
+/* Styling for forecast card dates */
+#forecasts h3{
+    margin: 20px 5px 10px 5px;
+    color: rgb(10, 112, 202);
+    font-size: 35px
+}
+/* Styling for forecast card status' */
+#forecasts p{
+    margin: 15px 5px 15px 5px;
+    color: rgb(195, 190, 190)
+}
+/* Styling for forecast card weather icons */
+#forecasts img{
+    margin-left: 10px;
+}

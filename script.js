@@ -78,18 +78,18 @@ function fetchForecastData(cityInput) {
             let forecastDay = dayjs().add(dayCount, "day").format("MM/DD/YYYY")
 
             if(data.list[i].weather[0].main == "Clear"){
-                visibility = "/Sunny.jpeg"
+                visibility = "./Images/Sunny.jpeg"
         } else if (data.list[i].weather[0].main == "Clouds"){
-            visibility = "/Cloudy.jpeg"
+            visibility = "./Images/Cloudy.jpeg"
         } else if (data.list[i].weather[0].main == "Fog" || data.list[i].weather[0].main == "Mist") {
-            visibility = "/Fog.jpeg"
+            visibility = "./Images/Fog.jpeg"
         } else if (data.list[i].weather[0].main == "Rain" || data.list[i].weather[0].main == "Drizzle"){
-            visibility = "/Rain.jpeg"
+            visibility = "./Images/Rain.jpeg"
         } else if (data.list[i].weather[0].main == "Snow" || data.list[i].weather[0].main == "Sleet"){
-            visibility = "/Snow.jpeg"
+            visibility = "./Images/Snow.jpeg"
         }
          else {
-            visibility = "/Thunderstorm.jpeg"
+            visibility = "./Images/Thunderstorm.jpeg"
         }
 
             let newdiv =
